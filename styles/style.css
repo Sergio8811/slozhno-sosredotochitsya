@@ -245,7 +245,7 @@
   .title-style {
     inline-size: 364px;
   }
-  .section {
+  .section__what {
     display: flex;
     flex-direction: column;
   }
@@ -276,7 +276,10 @@
     gap: 80px;
     padding: 18px 20px;
   }
-  .section {
+  .section__why {
+    grid-template-columns: 1fr 2fr;
+  }
+  .section__how {
     grid-template-columns: 1fr 2fr;
   }
   .gallery {
