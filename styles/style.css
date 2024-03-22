@@ -276,10 +276,7 @@
     gap: 80px;
     padding: 18px 20px;
   }
-  .section__why {
-    grid-template-columns: 1fr 2fr;
-  }
-  .section__how {
+  .section {
     grid-template-columns: 1fr 2fr;
   }
   .gallery {
