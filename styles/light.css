@@ -3,7 +3,7 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-.page.theme_light {
+.theme_light {
   --main-text-color: #353430;
   --title-color: #ffc2e6;
   --title-decor: #ff8dcb;
@@ -34,7 +34,10 @@
     --accent-color: var(--main-text-color);
     --subtitle-color: var(--main-text-color);
   }
+  .header__rec-text {
+    display: none;
+  }
 }
-.page.theme_light .header__rec-text {
+.theme_light .header__rec-text {
   display: none;
 }

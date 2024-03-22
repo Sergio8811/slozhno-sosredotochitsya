@@ -24,3 +24,8 @@
   --subtitle-color: var(--background-color);
   --text-color-rec: var(--title-decor);
 }
+.theme_dark .header__rec-text {
+  display: inline-block;
+}
+
+
