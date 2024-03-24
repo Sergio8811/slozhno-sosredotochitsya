@@ -219,11 +219,9 @@
 }
 @media (min-width: 768px) and (width<1024px) {
   .header {
-    height: 100vh;
     padding: 20px 20px 20px 0px;
   }
   .header__theme-menu {
-    align-self: center;
     margin-right: 3px;
   }
   .header__rec-text {
@@ -258,10 +256,6 @@
   }
   .section-title {
     max-width: 236px;
-  }
-  .footer {
-    align-content: center;
-    height: 100vh;
   }
   .footer__title {
     margin-inline-start: 0px;
@@ -362,11 +356,34 @@
   .section-title {
     max-width: 315px;
   }
+  .gallery__images {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
   .section__image {
     inline-size: 100%;
+    block-size: 100%;
+    max-width: 100%;
   }
-  .footer {
-    height: 100vh;
+  .img__sunset {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .img__ice-cream {
+    grid-column: 3/4;
+    grid-row: 1/4;
+  }
+  .img__tape {
+    grid-column: 1/2;
+    grid-row: 3/5;
+  }
+  .img__books {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .img__street {
+    grid-column: 2/4;
+    grid-row: 4/5;
   }
 }
 
