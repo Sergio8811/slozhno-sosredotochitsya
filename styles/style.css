@@ -1,5 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
+button {
+  cursor: pointer;
+}
 .page {
   /* сохраните в разметке и стилях класс page. 
   На его основе работает скрипт. */
@@ -184,6 +186,13 @@
 .section__links {
   text-shadow: 2px 2px 0 var(--title-shadow, #ff0070);
   text-decoration: none;
+}
+.section__links:hover {
+  border-bottom: 1.5px solid black;
+}
+
+.section__links:focus-visible {
+  outline: 1px solid black;
 }
 .gallery {
   display: flex;
