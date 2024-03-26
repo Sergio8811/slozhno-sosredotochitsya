@@ -1,7 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-button {
-  cursor: pointer;
-}
 .page {
   /* сохраните в разметке и стилях класс page. 
   На его основе работает скрипт. */
@@ -108,6 +105,9 @@ button {
   border: 1px solid currentColor;
   pointer-events: none;
 }
+.theme_dark .header__rec-text {
+  display: inline-block;
+}
 .header__title {
   color: var(--title-color, #db00ff);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -187,12 +187,21 @@ button {
   text-shadow: 2px 2px 0 var(--title-shadow, #ff0070);
   text-decoration: none;
 }
-.section__links:hover {
-  border-bottom: 1.5px solid black;
+.theme_dark .section__links:focus-visible {
+  outline: 1px solid var(--main-text-color);
+}
+.theme_dark .section__links:hover {
+  border-bottom: 1.5px solid var(--main-text-color);
 }
 
+.section__links:hover {
+  border-bottom: 1.5px solid currentColor;
+}
+.section__links:focus {
+  outline: none;
+}
 .section__links:focus-visible {
-  outline: 1px solid black;
+  outline: 1px solid currentColor;
 }
 .gallery {
   display: flex;
